@@ -53,9 +53,9 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 
 在训练集中，accuracy不断增长，loss不断下降，效果还不错
 
-![1](/Users/Blankchul/Desktop/IntroductinoToAI_homework-master/第三次作业/1_RNN/images/1.png)
+![1](1_RNN/images/1.png)
 
-![2](/Users/Blankchul/Desktop/IntroductinoToAI_homework-master/第三次作业/1_RNN/images/2.png)
+![2](1_RNN/images/2.png)
 
 但是在测试集中，loss比较大。![3](/Users/Blankchul/Desktop/IntroductinoToAI_homework-master/第三次作业/1_RNN/images/3.png)
 
@@ -85,7 +85,7 @@ Loss function 和 optimizer选择交叉熵和随机梯度下降。
 
 为了简单只训练了5个epoch, 每2000张图片计算一次loss。结果如图，可以看到loss在不断下降。
 
-![4](/Users/Blankchul/Desktop/IntroductinoToAI_homework-master/第三次作业/2_CNN/4.png)
+![4](2_CNN/4.png)
 
 #### 测试
 
@@ -100,3 +100,34 @@ Loss function 和 optimizer选择交叉熵和随机梯度下降。
 这一部分的代码包括两个模型，GAN和DCGAN。
 
  DCGAN的结果以图片和gif的形式包含在3_GAN文件里，但是DCGAN训练需要的时间太久，并没有运行完所有50个 epoch，只运行了15个，但是已经可以看到明显的变清晰的趋势。
+
+
+
+#### 参考资料
+
+Stanford cs231n课程视频
+
+#### RNN
+
+1. pandas: 删除满足某些条件的行: <https://www.cnblogs.com/cocowool/p/8421997.html>
+
+2. 建模：<https://juejin.im/entry/5a44bc4c6fb9a0451f313f2f
+
+3. Keras LTSM： <https://github.com/keras-team/keras/blob/master/examples/imdb_lstm.py>
+
+4. 理论：
+
+   <http://brightliao.me/2016/12/02/dl-workshop-rnn-and-lstm/>
+
+   http://brightliao.me/2016/12/11/dl-workshop-rnn-and-lstm-1/>
+
+#### CNN
+
+https://zhuanlan.zhihu.com/p/39667289
+
+#### GAN
+
+1. DCGANs: <https://www.tensorflow.org/beta/tutorials/generative/dcgan>
+2. GAN <https://www.oreilly.com/learning/generative-adversarial-networks-for-beginners>
+3. Reshape: <https://blog.csdn.net/xiaoqinting2015/article/details/69936952>
+4. Tensorflow eager execution: <https://www.tensorflow.org/guide/eager>
